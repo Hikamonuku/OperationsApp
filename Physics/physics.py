@@ -5,7 +5,7 @@ def select_physics():
     print("Physics")
     while True: 
         print("Select the subarea you want to calculate: ")
-        physics_subarea = input("1. Mechanics 2. Thermodynamics 3. Electronics 4. Optics 5. Waves 6. Modern Physics 7. Back: ")
+        physics_subarea = input("1. Mechanics 2. Thermology 3. Electronics 4. Optics 5. Waves 6. Modern Physics 7. Back: ")
         if physics_subarea == "1" or physics_subarea.lower() == "mechanics":
             mechanics.mechanics_branch()
         elif physics_subarea == "2" or physics_subarea.lower() == "thermodynamics":
