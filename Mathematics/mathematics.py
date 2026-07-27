@@ -1,5 +1,5 @@
 import math
-import basic_operations
+import Mathematics.Arithmetic.basic_operations as basic_operations
 
 def select_math():
     while True:
