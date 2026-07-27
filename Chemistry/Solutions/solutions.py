@@ -3,7 +3,7 @@ import math
 def select_calculation():
     while True:
         print("Select what you do want to calculate: ")
-        operation = input("1. Density 2. Dilution 3. Concentration 4. Molality 5. Molarity(M) 6. Moles(n) 7. Volume(V) 8. Back: ")
+        operation = input("1. Density 2. Dilution 3. Concentration 4. Molality 5. Molarity(M) 6. Moles(n) 7. Title 8. Back: ")
         if operation == "1" or operation.lower == "density":
             print("1. Density(d) 2. Mass(m) 3. Volume(V) 4. Back")
             density_calculation = input("Select what you do want to calculate: ")
@@ -42,6 +42,18 @@ def select_calculation():
                 print("Volume: ", result)
             elif density_calculation == "4" or density_calculation.lower() == "back":
                 return
+        elif operation == "2" or operation.lower() == "dilution":
+            pass
+        elif operation == "3" or operation.lower() == "concentration":
+            pass
+        elif operation == "4" or operation.lower() == "molality":
+            pass
+        elif operation == "5" or operation.lower() == "molarity":
+            pass
+        elif operation == "6" or operation.lower() == "mole" or operation.lower() == "moles":
+            pass
+        elif operation == "7" or operation.lower() == "title":
+            pass
         elif operation == "8" or operation.lower() == "back":
             return
         else:
