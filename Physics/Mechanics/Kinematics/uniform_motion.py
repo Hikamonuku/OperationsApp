@@ -132,21 +132,39 @@ def select_unit():
             print("7. Back")
             time_calc = input("Select what you do want to calculate: ")
             if time_calc == "1":
-                pass
+                final_time = float(input("Final Time: "))
+                velocity = float(print("Velocity: "))
+                init_pos = float(print("Initial Position: "))
+                final_pos = float(print("Final Position: "))
             elif time_calc == "2":
-                pass
+                final_time = float(input("Final Time: "))
+                velocity = float(print("Velocity: "))
+                position = float(print("Position: "))
             elif time_calc == "3":
-                pass
+                init_time = float(input("Initial Time: "))
+                velocity = float(print("Velocity: "))
+                init_pos = float(print("Initial Position: "))
+                final_pos = float(print("Final Position: "))                
             elif time_calc == "4":
-                pass
+                init_time = float(input("Initial Time: "))
+                velocity = float(print("Velocity: "))
+                position = float(print("Position: "))
             elif time_calc == "5":
-                pass
+                init_time = float(input("Initial Time: "))
+                final_time = float(input("Final Time: "))
+                delta_time = final_time - init_time
+                if delta_time == 0:
+                    print("The time interval cannot be zero")
+                    continue
             elif time_calc == "6":
                 position = float(input("Insert the value of the Position: "))
                 velocity = float(input("Insert the value of the Velocity: "))
                 result = velocity / position
+                if result == 0:
+                    print("The time interval cannot be zero")
+                    continue
                 print(result)
-            elif unit == "5":
+            elif unit == "7":
                 return
         elif unit == "4" or unit.lower() == "back":
             return
