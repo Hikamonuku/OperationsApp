@@ -1,7 +1,7 @@
 print("Basic Operations")
 import math
 
-def Select_Operation():
+def select_operation():
     while True: 
         print("Select an Operation:")
         operation = input("1. Addition 2. Subtraction 3. Multiplication 4. Division 5. nTh Root 6. Exponentiation 7. Logarithm 8. Back: ").lower()
