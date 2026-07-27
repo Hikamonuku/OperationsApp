@@ -19,14 +19,20 @@ def select_unit():
                 position = final_pos - init_pos
                 print("ΔX = ", final_pos, " - ", init_pos)
                 time = final_time - init_time
+                if time == 0:
+                    print("The Time interval cannot be zero")
+                    continue
                 print("Δt =", final_time, " - ", init_time)
                 result = position / time
-                print("V = ΔX / ΔT", )
+                print("V = ΔX / Δt", )
                 print("V =", position, " / ", time)
                 print("V = ", result)
             elif velocity_calc == "2":
                 position = float(input("Insert the value of the Position: "))
                 time = float(input("Insert the value of the Time: "))
+                if time == 0:
+                    print("The Time interval cannot be zero")
+                    continue
                 result = position / time
                 print("V = ΔX / Δt")
                 print(position, " / ", time)
@@ -55,8 +61,8 @@ def select_unit():
                     print("The time interval cannot be zero")
                     continue
                 velocity_time = velocity * delta_time
-                print("Xo = X - V * Δt")
-                print("Xo = X - V * (t - to)")
+                print("Xo = Xf - V * Δt")
+                print("Xo = Xf - V * (t - to)")
                 print("Xo = ", final_pos, " - ", velocity, "*", "(", final_time, " - ", init_time, ")")
                 print("Xo = ", final_pos, " - ", velocity_time)
                 result = final_pos - velocity_time
@@ -65,24 +71,55 @@ def select_unit():
                 final_pos = float(input("Final Position: "))
                 velocity = float(input("Velocity: "))
                 time = float(input("Time: "))
+                if time == 0:
+                    print("The Time interval cannot be zero")
+                    continue
                 velocity_time = velocity * time
-                print("X = Xo - V * Δt")
-                print("X = ", final_pos, " - ", velocity, " * ", time )
-                print("X = ", final_pos, " - ", velocity_time)
+                print("Xo = Xf - V * Δt")
+                print("Xo = ", final_pos, " - ", velocity, " * ", time )
+                print("Xo = ", final_pos, " - ", velocity_time)
                 result = final_pos - velocity_time
-                print("X = ", result)
+                print("Xo = ", result)
             elif position_calc == "3":
-                pass
+                init_pos = float(input("Initial Position: "))
+                velocity = float(input("Velocity: "))
+                init_time = float(input("Initial Time: "))
+                final_time = float(input("Final Time: "))
+                delta_time = final_time - init_time
+                if delta_time == 0:
+                    print("The time interval cannot be zero")
+                    continue
+                velocity_time = velocity * delta_time
+                print("Xf = Xo + V * Δt")
+                print("Xf = ", init_pos, " + ", "(", velocity, " + ", "(", final_time, " - ", init_time, ")")
+                print("Xf = ", init_pos, " + ", velocity_time)
+                result = init_pos + velocity_time
+                print("Xf = ", result)
             elif position_calc == "4":
-                pass
+                init_pos = float(input("Initial Position: "))
+                velocity = float(input("Velocity: "))
+                time = float(input("Time: "))
+                if time == 0:
+                    print("The time interval cannot be zero")
+                    continue
+                velocity_time = velocity * time
+                print ("Xf = Xo + V * Δt")
+                print("Xf = ", init_pos, " + ", velocity, " * ", time)
+                result = init_pos + velocity_time
+                print("Xf = ", result)
             elif position_calc == "5":
-                pass
+                print("ΔX = Xf - Xo")
+                init_pos = float(input("Initial Position: "))
+                final_pos = float(input("Final Position: "))
+                delta_position = final_pos - init_pos
+                print("ΔX = ", final_pos, " - ", init_pos)
+                print("ΔX = ", delta_position)
             elif position_calc == "6":
                 velocity = float(input("Insert the value of the Velocity: "))
                 time = float(input("Insert the value of the Time: "))
                 result = velocity * time
                 print(velocity, " * ", time)
-                print("X =", result)
+                print("X = ", result)
             else:
                 print("Invalid option.")
         elif unit.lower() == "t" or unit == "3" or unit.lower() == "time":
