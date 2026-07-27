@@ -73,27 +73,40 @@ def select_unit():
                 print("X = ", result)
             elif position_calc == "3":
                 pass
+            elif position_calc == "4":
+                pass
+            elif position_calc == "5":
+                pass
             elif position_calc == "6":
                 velocity = float(input("Insert the value of the Velocity: "))
                 time = float(input("Insert the value of the Time: "))
                 result = velocity * time
                 print(velocity, " * ", time)
-                print(result)
+                print("X =", result)
+            else:
+                print("Invalid option.")
         elif unit.lower() == "t" or unit == "3" or unit.lower() == "time":
-            print("1. Initial Time: from Final Time, Velocity and Position")
-            print("2. Final Time: from Initial Time, Velocity and Position")
-            print("3. Time Variation: from Final Time and Initial Time")
-            print("4. Time: from Position and velocity")
-            print("5. Back")
+            print("1. Initial Time: from Final Time, Velocity, Initial Position and Final Position")
+            print("2. Initial Time: from Final Time, velocity and Position")
+            print("3. Final Time: from Initial Time, Velocity and Initial Position and Final Position")
+            print("4. Final Time: from Initial Time, Velocity and Position")
+            print("5. Time Variation: from Final Time and Initial Time")
+            print("6. Time: from Position and velocity")
+            print("7. Back")
             time_calc = input("Select what you do want to calculate: ")
-            if time_calc == "2":
-                init_time = float(input("Initial Time: "))
-                velocity = float(input("Velocity: "))
-                position = float(input("Position: "))
-
-            if time_calc == "4":
+            if time_calc == "1":
+                pass
+            elif time_calc == "2":
+                pass
+            elif time_calc == "3":
+                pass
+            elif time_calc == "4":
+                pass
+            elif time_calc == "5":
+                pass
+            elif time_calc == "6":
                 position = float(input("Insert the value of the Position: "))
-                velocity = float(input("Insert the value of the Velocity"))
+                velocity = float(input("Insert the value of the Velocity: "))
                 result = velocity / position
                 print(result)
             elif unit == "5":
