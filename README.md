@@ -1,16 +1,18 @@
 # OperationsApp
 
-Application developed in Python as part of one of my first studies in Programming.
+Application developed in Python to practice programming fundamentals, including mathematical, chemical, and physics operations.
 
 ## Functions
 
-- Mathematical Operations
-- Chemical Operations
-- Physics Operations
+- Mathematical calculations
+- Chemical calculations
+- Physics calculations
 
 ## Used Technologies
 
 - Python
+- Git
+- GitHub
 
 ## How to Execute
 
@@ -20,4 +22,4 @@ python main.py
 
 ## Project Author
 
-Hikamonuku
+Hikamonuku (https://github.com/Hikamonuku)
