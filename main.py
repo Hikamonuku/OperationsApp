@@ -1,5 +1,5 @@
 import chemistry
-import mathematics
+import Mathematics.mathematics as mathematics
 import physics
 
 def select_subject():
